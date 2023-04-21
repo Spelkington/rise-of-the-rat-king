@@ -1,11 +1,11 @@
 {
-  "name": "template",
-  "version": "0.0.1",
+  "name": "the-rat-king",
+  "version": "0.0.2",
   "description": "template",
   "main": "index.js",
   "scripts": {
     "init-tools": "sh ./utils/sh/init-tools.sh",
-    "build": "sh ./utils/sh/build.sh",
+    "build": "yarn pull-assets && sh ./utils/sh/build.sh",
     "dev": "rbxtsc -w",
     "pull-assets": "sh ./utils/sh/pull_assets.sh"
   },
