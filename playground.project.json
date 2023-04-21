@@ -1,5 +1,5 @@
 {
-	"name": "template-playground",
+	"name": "the-rat-king-playground",
 	"globIgnorePaths": [
 		"**/package.json",
 		"**/tsconfig.json"
