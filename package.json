@@ -6,7 +6,7 @@
   "scripts": {
     "init-tools": "sh ./utils/sh/init-tools.sh",
     "build": "yarn pull-assets && sh ./utils/sh/build.sh",
-    "dev": "rbxtsc -w",
+    "dev": "yarn build && rbxtsc -w",
     "pull-assets": "sh ./utils/sh/pull_assets.sh"
   },
   "keywords": [],
