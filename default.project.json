@@ -1,5 +1,5 @@
 {
-	"name": "The Rat King",
+	"name": "the-rat-king",
 	"globIgnorePaths": [
 		"**/package.json",
 		"**/tsconfig.json"
@@ -37,6 +37,12 @@
 				"TS": {
 					"$path": "out/client"
 				}
+			}
+		},
+		"ServerStorage": {
+			"$className": "ServerStorage",
+			"Assets": {
+				"$path": "rbx/assets"
 			}
 		},
 		"Workspace": {
