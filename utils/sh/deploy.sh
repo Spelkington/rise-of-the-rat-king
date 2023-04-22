@@ -28,7 +28,8 @@ else
         echo "[WARN] You are about to deploy to the PRODUCTION version of the experience."
         echo "[WARN] If this is what you meant to do, please type \"I know what I'm doing\" to continue."
         read -p "Enter: " response
-        if [[ response != "I know what I'm doing" ]]; then
+        if [[ "$response" != "I know what I'm doing" ]]; then
+            echo "You clearly don't know what you're doing."
             exit 1
         fi
     fi
