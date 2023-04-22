@@ -1,4 +1,4 @@
-name: Development Testing & Deployment
+name: "Pull Request: Dev"
 
 on:
   pull_request:
@@ -19,7 +19,7 @@ on:
 jobs:
 
   test-build:
-    name: Ensure game files build
+    name: Test build
     runs-on: ubuntu-latest
     env:
       TERM: dumb
@@ -47,7 +47,7 @@ jobs:
           cmd: build
 
   dev-deploy:
-    name: Deploy to beta experience
+    name: Deploy beta to ROBLOX
     runs-on: ubuntu-latest
     env:
       TERM: dumb

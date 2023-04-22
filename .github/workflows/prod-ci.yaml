@@ -1,4 +1,4 @@
-name: Development Testing & Deployment
+name: "Deploy: Production"
 
 on:
   push:
@@ -16,7 +16,7 @@ on:
 jobs:
 
   test-build:
-    name: Ensure game files build
+    name: Test build
     runs-on: ubuntu-latest
     env:
       TERM: dumb
@@ -44,7 +44,7 @@ jobs:
           cmd: build
 
   prod-deploy:
-    name: Deploy to production experience
+    name: Deploy to ROBLOX
     runs-on: ubuntu-latest
     env:
       TERM: dumb
