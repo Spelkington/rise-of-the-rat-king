@@ -13,9 +13,8 @@ jobs:
   test-build:
     name: Ensure game files build
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        shell: bash
+    env:
+      TERM: dumb
     steps:
 
       - name: Checkout code
@@ -42,6 +41,11 @@ jobs:
   dev-deploy:
     name: Deploy to beta experience
     runs-on: ubuntu-latest
+    env:
+      TERM: dumb
+      EXPERIENCE_API_KEY: {{ secrets.EXPERIENCE_API_KEY }}
+    needs:
+      - test-build
     steps:
 
       - name: Checkout code
@@ -63,4 +67,4 @@ jobs:
       - name: Deploy places to beta experience
         uses: borales/actions-yarn@v4
         with:
-          cmd: deploy -e dev -k {{ secrets.EXPERIENCE_API_KEY }} -f
+          cmd: deploy -e dev -k $EXPERIENCE_API_KEY -f
