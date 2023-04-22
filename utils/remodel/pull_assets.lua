@@ -1,3 +1,4 @@
+-- Splits string paths based on separaters to navigate through RBX datamodel
 function splitstring(inputstr, sep)
 	if sep == nil then
 			sep = "%s"
@@ -9,6 +10,7 @@ function splitstring(inputstr, sep)
 	return t
 end
 
+-- Gets the instance data from the game file datamodel
 local function GetInstanceFromDatamodel(Datamodel,StringPath)
 	local CurrentObjectReference = Datamodel
 
@@ -24,11 +26,14 @@ local function GetInstanceFromDatamodel(Datamodel,StringPath)
 	return CurrentObjectReference
 end
 
+-- Recursively saves assets at the provided input path into the system filestore
 local function SaveAssetToFilesystem(Path, Asset)
     for _,Instance in pairs(Asset:GetChildren()) do
 		if Instance.ClassName ~= "Folder" then
+			-- If the instance is not a folder, write the model as .rbxmx
 			remodel.writeModelFile(Path.."/"..Instance.Name..".rbxmx", Instance)
 		else
+			-- Recurse into folder
 			remodel.createDirAll(Path.."/"..Instance.Name)
 			SaveAssetToFilesystem(Path.."/"..Instance.Name, Instance)
         end
