@@ -1,20 +1,15 @@
-# Fetch project environment from arguments.
-force_deploy='false'
-project_environment='dev'
-EXPERIENCE_API_KEY=''
-
-# Get force flag. A bit overkill.
 while getopts 'k:e:f' flag; do
     case "${flag}" in
-        k) EXPERIENCE_API_KEY=$OPTTAG ;;
+        k) api_key=$OPTARG ;;
         e) project_environment=$OPTARG ;;
         f) force_deploy='true' ;;
     esac
 done
 
-if [ "$EXPERIENCE_API_KEY" == '' ]; then
+if [ -z ${api_key+x} ]; then
     if [ -f .env ]; then
         source .env
+        api_key=$EXPERIENCE_API_KEY
     else
         echo "[ERROR] An API key must be provided."
         exit 1
@@ -50,7 +45,7 @@ for project_file in ./*.project.json; do
         --place-id $place_id \
         --universe-id $universe_id \
         --version-type "published" \
-        --api-key $EXPERIENCE_API_KEY
+        --api-key $api_key
 
     echo "[SUCCESS] Deployed $project_domain to Roblox $project_environment environment!"
 done
