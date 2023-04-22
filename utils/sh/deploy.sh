@@ -12,8 +12,8 @@ while getopts 'k:e:f' flag; do
     esac
 done
 
-if [[ "$EXPERIENCE_API_KEY" == '' ]]; then
-    if [[ -f .env ]]; then
+if [ "$EXPERIENCE_API_KEY" == '' ]; then
+    if [ -f .env ]; then
         source .env
     else
         echo "[ERROR] An API key must be provided."
@@ -21,14 +21,14 @@ if [[ "$EXPERIENCE_API_KEY" == '' ]]; then
     fi
 fi
 
-if [[ "$project_environment" != "prod" ]]; then
+if [ "$project_environment" != "prod" ]; then
     project_environment="dev"
 else
-    if [[ "$force_deploy" != 'true' ]]; then
+    if [ "$force_deploy" != 'true' ]; then
         echo "[WARN] You are about to deploy to the PRODUCTION version of the experience."
         echo "[WARN] If this is what you meant to do, please type \"I know what I'm doing\" to continue."
         read -p "Enter: " response
-        if [[ "$response" != "I know what I'm doing" ]]; then
+        if [ "$response" != "I know what I'm doing" ]; then
             echo "You clearly don't know what you're doing."
             exit 1
         fi
