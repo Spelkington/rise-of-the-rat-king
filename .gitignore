@@ -1,10 +1,12 @@
 /node_modules
 /out
-/include
+**/include
 *.tsbuildinfo
 flamework.build
 
 *.rbxl*.lock
 *.rbxl
-/rbx/assets
+*.rbxmx
+**/.env
+
 builds

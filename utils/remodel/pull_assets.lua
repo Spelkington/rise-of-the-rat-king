@@ -41,7 +41,7 @@ local function SaveAssetToFilesystem(Path, Asset)
 end
 
 -- TODO: Pass in filesystem paths as arguments
-local Datamodel = remodel.readPlaceFile("./rbx/places/assets.rbxlx")
+local Datamodel = remodel.readPlaceFile("./rbx/assets.rbxlx")
 local Pullfrom = GetInstanceFromDatamodel(Datamodel,"Workspace.Assets")
 local Saveto = "./rbx/assets"
 

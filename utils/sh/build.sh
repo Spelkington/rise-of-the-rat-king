@@ -1,17 +1,21 @@
-# Compile rbxtsc
-rbxtsc
-
-# Clear all existing builds
+# Clear any existing builds
 rm -rf builds
 mkdir builds
 
+# Exit on fail
+set -e
+
 for project_file in ./*.project.json; do
+    echo "[PROJECT] Processing $project_file..."
+    
     # Capture domain (domain.project.json) from filename
-    project_name=$(jq -r ".name" $project_file)
+    project_domain=$( echo $project_file | sed 's/^\.\/\([^.]*\).*/\1/' )
+
+    # Compile rbxtsc
+    echo "\t[COMPILING] places/$project_domain/src => out/$project_domain..."
+    rbxtsc --rojo $project_file --project places/$project_domain/
 
     # Create build directories with rblx file + project file
-    echo "Building $project_name.rblx into builds/$project_name..."
-    mkdir builds/$project_name
-    rojo build --output builds/$project_name/$project_name.rbxl $project_file >> /dev/null
-    cp $project_file builds/$project_name/
+    echo "\t[BUILDING] out/$project_domain => builds/$project_domain/$project_domain.rblx ..."
+    rojo build --output builds/$project_domain.rbxl $project_file
 done

@@ -2,12 +2,29 @@
   "name": "the-rat-king",
   "version": "0.0.2",
   "description": "template",
+  "deployments": {
+    "dev": {
+      "universe": 4607868890,
+      "places": {
+        "lobby": 13210402370,
+        "arena": 13210405674
+      }
+    },
+    "prod": {
+      "universe": 4607868890,
+      "places": {
+        "lobby": 13210402370,
+        "arena": 13210405674
+      }
+    }
+  },
   "main": "index.js",
   "scripts": {
     "init-tools": "sh ./utils/sh/init-tools.sh",
-    "build": "yarn pull-assets && sh ./utils/sh/build.sh",
-    "dev": "yarn build && rbxtsc -w",
-    "pull-assets": "sh ./utils/sh/pull_assets.sh"
+    "build": "clear && yarn pull-assets && sh ./utils/sh/build.sh",
+    "dev": "clear && yarn build && rbxtsc -w",
+    "pull-assets": "sh ./utils/sh/pull_assets.sh",
+    "deploy": "yarn build && sh ./utils/sh/deploy.sh"
   },
   "keywords": [],
   "author": "",

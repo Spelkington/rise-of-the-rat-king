@@ -1,5 +1,5 @@
 {
-	"name": "the-rat-king",
+	"name": "the-rat-king-arena",
 	"globIgnorePaths": [
 		"**/package.json",
 		"**/tsconfig.json"
@@ -9,13 +9,13 @@
 		"ServerScriptService": {
 			"$className": "ServerScriptService",
 			"TS": {
-				"$path": "out/server"
+				"$path": "out/arena/server"
 			}
 		},
 		"ReplicatedStorage": {
 			"$className": "ReplicatedStorage",
 			"rbxts_include": {
-				"$path": "include",
+				"$path": "places/arena/include",
 				"node_modules": {
 					"$className": "Folder",
 					"@rbxts": {
@@ -27,7 +27,7 @@
 				}
 			},
 			"TS": {
-				"$path": "out/shared"
+				"$path": "out/arena/shared"
 			}
 		},
 		"StarterPlayer": {
@@ -35,7 +35,7 @@
 			"StarterPlayerScripts": {
 				"$className": "StarterPlayerScripts",
 				"TS": {
-					"$path": "out/client"
+					"$path": "out/arena/client"
 				}
 			}
 		},
