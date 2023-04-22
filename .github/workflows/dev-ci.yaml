@@ -51,7 +51,6 @@ jobs:
     runs-on: ubuntu-latest
     env:
       TERM: dumb
-      EXPERIENCE_API_KEY: ${{ secrets.EXPERIENCE_API_KEY }}
     needs:
       - test-build
     steps:
@@ -75,4 +74,4 @@ jobs:
       - name: Deploy places to beta experience
         uses: borales/actions-yarn@v4
         with:
-          cmd: deploy -e dev -k $EXPERIENCE_API_KEY -f
+          cmd: deploy -e dev -k ${{ secrets.EXPERIENCE_API_KEY }} -f
