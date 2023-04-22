@@ -21,7 +21,7 @@
   "main": "index.js",
   "scripts": {
     "init-tools": "sh ./utils/sh/init-tools.sh",
-    "build": "clear && yarn pull-assets && sh ./utils/sh/build.sh",
+    "build": "yarn pull-assets && sh ./utils/sh/build.sh",
     "dev": "clear && yarn build && rbxtsc -w",
     "pull-assets": "sh ./utils/sh/pull_assets.sh",
     "deploy": "yarn build && sh ./utils/sh/deploy.sh"
