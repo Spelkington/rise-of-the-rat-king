@@ -297,13 +297,13 @@ $RECYCLE.BIN/
 *.lnk
 
 # Yarn bullshit.
-**.pnp.*
-**.yarn/*
-!*.yarn/patches
-!*.yarn/plugins
-!*.yarn/releases
-!*.yarn/sdks
-!*.yarn/versions
+**/.pnp.*
+**/.yarn/*
+!**/.yarn/patches
+!**/.yarn/plugins
+!**/.yarn/releases
+!**/.yarn/sdks
+!**/.yarn/versions
 
 # End of https://www.toptal.com/developers/gitignore/api/macos,windows,linux,vim,visualstudiocode,lua,node
 
