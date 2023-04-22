@@ -10,6 +10,9 @@ jobs:
   test-build:
     name: Ensure game files build
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
     env:
       TERM: dumb
     steps:
@@ -38,6 +41,9 @@ jobs:
   prod-deploy:
     name: Deploy to production experience
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
     env:
       TERM: dumb
       EXPERIENCE_API_KEY: ${{ secrets.EXPERIENCE_API_KEY }}
