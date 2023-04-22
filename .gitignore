@@ -297,6 +297,8 @@ $RECYCLE.BIN/
 *.lnk
 
 # Yarn bullshit.
+#
+# I'll remove this when I get over how far behind this hack weekend I am.
 **/.pnp.*
 **/.yarn/*
 !**/.yarn/patches
