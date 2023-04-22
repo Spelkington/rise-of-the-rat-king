@@ -4,10 +4,10 @@
   "description": "template",
   "deployments": {
     "dev": {
-      "universe": 4607868890,
+      "universe": 4608447921,
       "places": {
-        "lobby": 13210402370,
-        "arena": 13210405674
+        "lobby": 13212473825,
+        "arena": 13212504906
       }
     },
     "prod": {
