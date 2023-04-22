@@ -313,9 +313,7 @@ $RECYCLE.BIN/
 *.tsbuildinfo
 flamework.build
 
-*.rbxl*.lock
-*.rbxl
-*.rbxmx
+*.rbxl*
 **/.env
 
 builds

@@ -19,14 +19,12 @@
     }
   },
   "workspaces": [
-    "workspaces/*/*",
-    "libraries/*/*"
+    "workspaces/*",
+    "workspaces/**"
   ],
   "scripts": {
-    "build": "yarn build:places",
-    "build:places": "yarn workspaces foreach -pt --from 'workspaces/places/*' run build",
-    "build:libraries": "yarn workspaces",
-    "load-assets": "sh ./utils/pull-assets"
+    "build": "yarn workspaces foreach -pt run build",
+    "load-assets": "bash ./utils/sh/pull-assets.sh"
   },
   "main": "index.js",
   "license": "MIT",

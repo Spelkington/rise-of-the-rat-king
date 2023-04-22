@@ -1,5 +1,5 @@
 {
-	"name": "flamework-game",
+	"name": "the-rat-king-arena",
 	"globIgnorePaths": [
 		"**/package.json",
 		"**/tsconfig.json"
@@ -56,6 +56,10 @@
 			"$properties": {
 				"RespectFilteringEnabled": true
 			}
+		},
+		"ServerStorage": {
+			"$className": "ServerStorage",
+			"$path": "../../../assets"
 		}
 	}
 }

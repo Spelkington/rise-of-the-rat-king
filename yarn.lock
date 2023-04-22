@@ -2406,6 +2406,12 @@ __metadata:
   languageName: node
   linkType: hard
 
+"the-rat-king-assets@workspace:workspaces/roblox-assets":
+  version: 0.0.0-use.local
+  resolution: "the-rat-king-assets@workspace:workspaces/roblox-assets"
+  languageName: unknown
+  linkType: soft
+
 "the-rat-king@workspace:.":
   version: 0.0.0-use.local
   resolution: "the-rat-king@workspace:."
