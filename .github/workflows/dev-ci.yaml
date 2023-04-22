@@ -20,6 +20,7 @@ jobs:
 
   test-build:
     name: Test build
+    if: '! github.event.pull_request.draft'
     runs-on: ubuntu-latest
     env:
       TERM: dumb
