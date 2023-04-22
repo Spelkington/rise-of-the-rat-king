@@ -40,7 +40,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       TERM: dumb
-      EXPERIENCE_API_KEY: {{ secrets.EXPERIENCE_API_KEY }}
+      EXPERIENCE_API_KEY: ${{ secrets.EXPERIENCE_API_KEY }}
     needs:
       - test-build
     steps:
