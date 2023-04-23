@@ -8,9 +8,9 @@
     "buildsrc:{{ template_name }}": "rbxtsc",
     "buildplace:{{ template_name }}": "mkdir -p builds && rojo build --output builds/{{ template_name }}.rbxlx {{ template_name }}.project.json",
     "watch:{{ template_name }}": "rbxtsc -w",
-    "serve:{{ template_name }}": "rojo serve",
+    "serve:{{ template_name }}": "rojo serve {{ template_name }}.project.json",
     "dev:{{ template_name }}": "yarn build && yarn shortcircuitdev:{{ template_name }}",
-    "shortcircuitdev:{{ template_name }}": "concurrently 'yarn watch:{{ template_name }}' 'yarn serve:{{ template_name }}'"
+    "shortcircuitdev:{{ template_name }}": "concurrently -k 'yarn watch:{{ template_name }}' 'yarn serve:{{ template_name }}'"
   },
   "keywords": [],
   "author": "",

@@ -8,9 +8,9 @@
     "buildsrc:arena": "rbxtsc",
     "buildplace:arena": "mkdir -p builds && rojo build --output builds/arena.rbxlx arena.project.json",
     "watch:arena": "rbxtsc -w",
-    "serve:arena": "rojo serve",
+    "serve:arena": "rojo serve arena.project.json",
     "dev:arena": "yarn build && yarn shortcircuitdev:arena",
-    "shortcircuitdev:arena": "concurrently 'yarn watch:arena' 'yarn serve:arena'"
+    "shortcircuitdev:arena": "concurrently -k 'yarn watch:arena' 'yarn serve:arena'"
   },
   "keywords": [],
   "author": "",

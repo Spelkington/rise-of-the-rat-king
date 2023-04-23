@@ -8,9 +8,9 @@
     "buildsrc:lobby": "rbxtsc",
     "buildplace:lobby": "mkdir -p builds && rojo build --output builds/lobby.rbxlx lobby.project.json",
     "watch:lobby": "rbxtsc -w",
-    "serve:lobby": "rojo serve",
+    "serve:lobby": "rojo serve lobby.project.json",
     "dev:lobby": "yarn build && yarn shortcircuitdev:lobby",
-    "shortcircuitdev:lobby": "concurrently 'yarn watch:lobby' 'yarn serve:lobby'"
+    "shortcircuitdev:lobby": "concurrently -k 'yarn watch:lobby' 'yarn serve:lobby'"
   },
   "keywords": [],
   "author": "",

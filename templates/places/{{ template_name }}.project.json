@@ -39,6 +39,12 @@
 				}
 			}
 		},
+		"Players": {
+			"$className": "Players",
+			"$properties": {
+				"CharacterAutoLoads": false
+			}
+		},
 		"Workspace": {
 			"$className": "Workspace",
 			"$properties": {
