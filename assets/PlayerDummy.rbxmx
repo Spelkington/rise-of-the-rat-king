@@ -32,9 +32,9 @@
       <BinaryString name="Tags"></BinaryString>
       <OptionalCoordinateFrame name="WorldPivotData">
         <CFrame>
-          <X>-27.5</X>
-          <Y>2.5</Y>
-          <Z>48</Z>
+          <X>364.49994</X>
+          <Y>5.5999913</Y>
+          <Z>2.0000381</Z>
           <R00>1</R00>
           <R01>0</R01>
           <R02>0</R02>
@@ -61,9 +61,9 @@
         <token name="BottomSurface">0</token>
         <token name="BottomSurfaceInput">0</token>
         <CoordinateFrame name="CFrame">
-          <X>-27.5</X>
-          <Y>1.0000005</Y>
-          <Z>48.5</Z>
+          <X>364.49994</X>
+          <Y>4.1000004</Y>
+          <Z>2.5000381</Z>
           <R00>1</R00>
           <R01>0</R01>
           <R02>0</R02>
@@ -93,7 +93,7 @@
         <float name="LeftParamB">0.5</float>
         <token name="LeftSurface">0</token>
         <token name="LeftSurfaceInput">0</token>
-        <bool name="Locked">false</bool>
+        <bool name="Locked">true</bool>
         <bool name="Massless">false</bool>
         <token name="Material">256</token>
         <string name="MaterialVariantSerialized"></string>
@@ -156,9 +156,9 @@
         <token name="BottomSurface">0</token>
         <token name="BottomSurfaceInput">0</token>
         <CoordinateFrame name="CFrame">
-          <X>-27.5</X>
-          <Y>1.0000015</Y>
-          <Z>47.5</Z>
+          <X>364.49994</X>
+          <Y>4.1000032</Y>
+          <Z>1.5000381</Z>
           <R00>1</R00>
           <R01>0</R01>
           <R02>0</R02>
@@ -188,7 +188,7 @@
         <float name="LeftParamB">0.5</float>
         <token name="LeftSurface">0</token>
         <token name="LeftSurfaceInput">0</token>
-        <bool name="Locked">false</bool>
+        <bool name="Locked">true</bool>
         <bool name="Massless">false</bool>
         <token name="Material">256</token>
         <string name="MaterialVariantSerialized"></string>
@@ -251,9 +251,9 @@
         <token name="BottomSurface">0</token>
         <token name="BottomSurfaceInput">0</token>
         <CoordinateFrame name="CFrame">
-          <X>-27.5</X>
-          <Y>2.9999995</Y>
-          <Z>48</Z>
+          <X>364.49994</X>
+          <Y>6.0999994</Y>
+          <Z>2.0000381</Z>
           <R00>1</R00>
           <R01>0</R01>
           <R02>0</R02>
@@ -283,7 +283,7 @@
         <float name="LeftParamB">0.5</float>
         <token name="LeftSurface">0</token>
         <token name="LeftSurfaceInput">0</token>
-        <bool name="Locked">false</bool>
+        <bool name="Locked">true</bool>
         <bool name="Massless">false</bool>
         <token name="Material">256</token>
         <string name="MaterialVariantSerialized"></string>
@@ -346,9 +346,9 @@
         <token name="BottomSurface">0</token>
         <token name="BottomSurfaceInput">0</token>
         <CoordinateFrame name="CFrame">
-          <X>-27.5</X>
-          <Y>2.9999995</Y>
-          <Z>49.5</Z>
+          <X>364.49994</X>
+          <Y>6.0999994</Y>
+          <Z>3.5000381</Z>
           <R00>1</R00>
           <R01>0</R01>
           <R02>0</R02>
@@ -378,7 +378,7 @@
         <float name="LeftParamB">0.5</float>
         <token name="LeftSurface">0</token>
         <token name="LeftSurfaceInput">0</token>
-        <bool name="Locked">false</bool>
+        <bool name="Locked">true</bool>
         <bool name="Massless">false</bool>
         <token name="Material">256</token>
         <string name="MaterialVariantSerialized"></string>
@@ -441,9 +441,9 @@
         <token name="BottomSurface">0</token>
         <token name="BottomSurfaceInput">0</token>
         <CoordinateFrame name="CFrame">
-          <X>-27.5</X>
-          <Y>2.9999995</Y>
-          <Z>46.5</Z>
+          <X>364.49994</X>
+          <Y>6.0999994</Y>
+          <Z>0.50003815</Z>
           <R00>1</R00>
           <R01>0</R01>
           <R02>0</R02>
@@ -473,7 +473,7 @@
         <float name="LeftParamB">0.5</float>
         <token name="LeftSurface">0</token>
         <token name="LeftSurfaceInput">0</token>
-        <bool name="Locked">false</bool>
+        <bool name="Locked">true</bool>
         <bool name="Massless">false</bool>
         <token name="Material">256</token>
         <string name="MaterialVariantSerialized"></string>
@@ -536,9 +536,9 @@
         <token name="BottomSurface">0</token>
         <token name="BottomSurfaceInput">0</token>
         <CoordinateFrame name="CFrame">
-          <X>-27.5</X>
-          <Y>4.4999995</Y>
-          <Z>48</Z>
+          <X>364.49994</X>
+          <Y>7.5999823</Y>
+          <Z>2.0000381</Z>
           <R00>1</R00>
           <R01>0</R01>
           <R02>0</R02>
@@ -568,7 +568,7 @@
         <float name="LeftParamB">0.5</float>
         <token name="LeftSurface">0</token>
         <token name="LeftSurfaceInput">0</token>
-        <bool name="Locked">false</bool>
+        <bool name="Locked">true</bool>
         <bool name="Massless">false</bool>
         <token name="Material">256</token>
         <string name="MaterialVariantSerialized"></string>
