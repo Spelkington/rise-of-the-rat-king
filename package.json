@@ -24,6 +24,8 @@
   ],
   "scripts": {
     "build": "yarn workspaces foreach -pt run build",
+    "deploy": "bash ./utils/deploy.sh",
+    "deploy:full": "yarn build && yarn deploy",
     "create:place": "bash ./utils/create-template.sh -t places -n"
   },
   "main": "index.js",

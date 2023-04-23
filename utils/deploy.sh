@@ -32,22 +32,25 @@ else
     fi
 fi
 
+# Get places for deployment
+package_file='package.json'
+project_domains=( $(cat "$package_file" | jq -r ".deployments.$project_environment.places | keys[]") )
+
 set -e
-for project_file in ./*.project.json; do
-    # Capture domain (domain.project.json) from filename
-    project_domain=$( echo $project_file | sed 's/^\.\/\([^.]*\).*/\1/' )
+for project_domain in "${project_domains[@]}"; do
 
     echo "[DEPLOY] Deploying $project_domain to Roblox in $project_environment environment..."
 
-    place_id=$(jq -r ".deployments.$project_environment.places.$project_domain" ./package.json)
-    universe_id=$(jq -r ".deployments.$project_environment.universe" ./package.json)
+    place_id=$(jq -r ".deployments.$project_environment.places.$project_domain" $package_file)
+    universe_id=$(jq -r ".deployments.$project_environment.universe" $package_file)
     
     rbxcloud experience publish \
-        --filename ./builds/$project_domain.rbxl \
+        --filename ./workspaces/places/$project_domain/builds/$project_domain.rbxlx \
         --place-id $place_id \
         --universe-id $universe_id \
         --version-type "published" \
         --api-key $api_key
 
     echo "[SUCCESS] Deployed $project_domain to Roblox $project_environment environment!"
+
 done
