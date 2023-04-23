@@ -32,9 +32,9 @@
       <BinaryString name="Tags"></BinaryString>
       <OptionalCoordinateFrame name="WorldPivotData">
         <CFrame>
-          <X>-12.322905</X>
+          <X>-303.13293</X>
           <Y>2.2247913</Y>
-          <Z>52.186546</Z>
+          <Z>425.18658</Z>
           <R00>1</R00>
           <R01>0</R01>
           <R02>0</R02>
@@ -61,9 +61,9 @@
         <token name="BottomSurface">0</token>
         <token name="BottomSurfaceInput">0</token>
         <CoordinateFrame name="CFrame">
-          <X>-12.596132</X>
+          <X>-303.40616</X>
           <Y>0.048436046</Y>
-          <Z>52.78887</Z>
+          <Z>425.78888</Z>
           <R00>1</R00>
           <R01>0</R01>
           <R02>0</R02>
@@ -105,7 +105,7 @@
         <float name="LeftParamB">0.5</float>
         <token name="LeftSurface">0</token>
         <token name="LeftSurfaceInput">0</token>
-        <bool name="Locked">false</bool>
+        <bool name="Locked">true</bool>
         <bool name="Massless">false</bool>
         <token name="Material">256</token>
         <string name="MaterialVariantSerialized"></string>
@@ -158,9 +158,9 @@
         <token name="TopSurfaceInput">0</token>
         <float name="Transparency">0</float>
         <Vector3 name="Velocity">
-          <X>-0.000000000000000000000000000000000000000000001</X>
+          <X>0</X>
           <Y>0</Y>
-          <Z>-0.000000000000000000000000000000000000000000001</Z>
+          <Z>0</Z>
         </Vector3>
         <int name="VertexCount">0</int>
       </Properties>
@@ -256,9 +256,9 @@
         <token name="BottomSurface">0</token>
         <token name="BottomSurfaceInput">0</token>
         <CoordinateFrame name="CFrame">
-          <X>-12.596128</X>
+          <X>-303.40616</X>
           <Y>0.048436165</Y>
-          <Z>51.894676</Z>
+          <Z>424.8947</Z>
           <R00>1</R00>
           <R01>0</R01>
           <R02>0</R02>
@@ -300,7 +300,7 @@
         <float name="LeftParamB">0.5</float>
         <token name="LeftSurface">0</token>
         <token name="LeftSurfaceInput">0</token>
-        <bool name="Locked">false</bool>
+        <bool name="Locked">true</bool>
         <bool name="Massless">false</bool>
         <token name="Material">256</token>
         <string name="MaterialVariantSerialized"></string>
@@ -353,9 +353,9 @@
         <token name="TopSurfaceInput">0</token>
         <float name="Transparency">0</float>
         <Vector3 name="Velocity">
-          <X>-0.000000000000000000000000000000000000000000001</X>
+          <X>0</X>
           <Y>0</Y>
-          <Z>-0.000000000000000000000000000000000000000000001</Z>
+          <Z>0</Z>
         </Vector3>
         <int name="VertexCount">0</int>
       </Properties>
@@ -474,9 +474,9 @@
         <token name="BottomSurface">0</token>
         <token name="BottomSurfaceInput">0</token>
         <CoordinateFrame name="CFrame">
-          <X>-12.596128</X>
+          <X>-303.40616</X>
           <Y>0.19374299</Y>
-          <Z>51.99403</Z>
+          <Z>424.99408</Z>
           <R00>1</R00>
           <R01>0</R01>
           <R02>0</R02>
@@ -518,7 +518,7 @@
         <float name="LeftParamB">0.5</float>
         <token name="LeftSurface">0</token>
         <token name="LeftSurfaceInput">0</token>
-        <bool name="Locked">false</bool>
+        <bool name="Locked">true</bool>
         <bool name="Massless">false</bool>
         <token name="Material">256</token>
         <string name="MaterialVariantSerialized"></string>
@@ -571,9 +571,9 @@
         <token name="TopSurfaceInput">0</token>
         <float name="Transparency">0</float>
         <Vector3 name="Velocity">
-          <X>-0.000000000000000000000000000000000000000000001</X>
+          <X>0</X>
           <Y>0</Y>
-          <Z>-0.000000000000000000000000000000000000000000001</Z>
+          <Z>0</Z>
         </Vector3>
         <int name="VertexCount">0</int>
       </Properties>
@@ -692,9 +692,9 @@
         <token name="BottomSurface">0</token>
         <token name="BottomSurfaceInput">0</token>
         <CoordinateFrame name="CFrame">
-          <X>-12.596132</X>
+          <X>-303.40616</X>
           <Y>0.24217832</Y>
-          <Z>52.900646</Z>
+          <Z>425.90067</Z>
           <R00>1</R00>
           <R01>0</R01>
           <R02>0</R02>
@@ -736,7 +736,7 @@
         <float name="LeftParamB">0.5</float>
         <token name="LeftSurface">0</token>
         <token name="LeftSurfaceInput">0</token>
-        <bool name="Locked">false</bool>
+        <bool name="Locked">true</bool>
         <bool name="Massless">false</bool>
         <token name="Material">256</token>
         <string name="MaterialVariantSerialized"></string>
@@ -789,9 +789,9 @@
         <token name="TopSurfaceInput">0</token>
         <float name="Transparency">0</float>
         <Vector3 name="Velocity">
-          <X>-0.000000000000000000000000000000000000000000001</X>
+          <X>0</X>
           <Y>0</Y>
-          <Z>-0.000000000000000000000000000000000000000000001</Z>
+          <Z>0</Z>
         </Vector3>
         <int name="VertexCount">0</int>
       </Properties>
@@ -910,9 +910,9 @@
         <token name="BottomSurface">0</token>
         <token name="BottomSurfaceInput">0</token>
         <CoordinateFrame name="CFrame">
-          <X>-12.596128</X>
+          <X>-303.40616</X>
           <Y>0.2781948</Y>
-          <Z>51.99403</Z>
+          <Z>424.99408</Z>
           <R00>1</R00>
           <R01>0</R01>
           <R02>0</R02>
@@ -954,7 +954,7 @@
         <float name="LeftParamB">0.5</float>
         <token name="LeftSurface">0</token>
         <token name="LeftSurfaceInput">0</token>
-        <bool name="Locked">false</bool>
+        <bool name="Locked">true</bool>
         <bool name="Massless">false</bool>
         <token name="Material">256</token>
         <string name="MaterialVariantSerialized"></string>
@@ -1007,9 +1007,9 @@
         <token name="TopSurfaceInput">0</token>
         <float name="Transparency">0</float>
         <Vector3 name="Velocity">
-          <X>-0.000000000000000000000000000000000000000000001</X>
+          <X>0</X>
           <Y>0</Y>
-          <Z>-0.000000000000000000000000000000000000000000001</Z>
+          <Z>0</Z>
         </Vector3>
         <int name="VertexCount">0</int>
       </Properties>
@@ -1151,9 +1151,9 @@
         <token name="BottomSurface">0</token>
         <token name="BottomSurfaceInput">0</token>
         <CoordinateFrame name="CFrame">
-          <X>-12.596132</X>
+          <X>-303.40616</X>
           <Y>0.39121076</Y>
-          <Z>52.900646</Z>
+          <Z>425.90067</Z>
           <R00>1</R00>
           <R01>0</R01>
           <R02>0</R02>
@@ -1195,7 +1195,7 @@
         <float name="LeftParamB">0.5</float>
         <token name="LeftSurface">0</token>
         <token name="LeftSurfaceInput">0</token>
-        <bool name="Locked">false</bool>
+        <bool name="Locked">true</bool>
         <bool name="Massless">false</bool>
         <token name="Material">256</token>
         <string name="MaterialVariantSerialized"></string>
@@ -1248,9 +1248,9 @@
         <token name="TopSurfaceInput">0</token>
         <float name="Transparency">0</float>
         <Vector3 name="Velocity">
-          <X>-0.000000000000000000000000000000000000000000001</X>
+          <X>0</X>
           <Y>0</Y>
-          <Z>-0.000000000000000000000000000000000000000000001</Z>
+          <Z>0</Z>
         </Vector3>
         <int name="VertexCount">0</int>
       </Properties>
@@ -1369,9 +1369,9 @@
         <token name="BottomSurface">0</token>
         <token name="BottomSurfaceInput">0</token>
         <CoordinateFrame name="CFrame">
-          <X>-12.322905</X>
+          <X>-303.13293</X>
           <Y>0.47069526</Y>
-          <Z>52.726772</Z>
+          <Z>425.7268</Z>
           <R00>1</R00>
           <R01>0</R01>
           <R02>0</R02>
@@ -1413,7 +1413,7 @@
         <float name="LeftParamB">0.5</float>
         <token name="LeftSurface">0</token>
         <token name="LeftSurfaceInput">0</token>
-        <bool name="Locked">false</bool>
+        <bool name="Locked">true</bool>
         <bool name="Massless">false</bool>
         <token name="Material">256</token>
         <string name="MaterialVariantSerialized"></string>
@@ -1466,9 +1466,9 @@
         <token name="TopSurfaceInput">0</token>
         <float name="Transparency">0</float>
         <Vector3 name="Velocity">
-          <X>-0.000000000000000000000000000000000000000000001</X>
+          <X>0</X>
           <Y>0</Y>
-          <Z>-0.000000000000000000000000000000000000000000001</Z>
+          <Z>0</Z>
         </Vector3>
         <int name="VertexCount">0</int>
       </Properties>
@@ -1702,9 +1702,9 @@
         <token name="BottomSurface">0</token>
         <token name="BottomSurfaceInput">0</token>
         <CoordinateFrame name="CFrame">
-          <X>-12.037256</X>
+          <X>-302.8473</X>
           <Y>0.04843615</Y>
-          <Z>52.776447</Z>
+          <Z>425.77646</Z>
           <R00>1</R00>
           <R01>0</R01>
           <R02>0</R02>
@@ -1746,7 +1746,7 @@
         <float name="LeftParamB">0.5</float>
         <token name="LeftSurface">0</token>
         <token name="LeftSurfaceInput">0</token>
-        <bool name="Locked">false</bool>
+        <bool name="Locked">true</bool>
         <bool name="Massless">false</bool>
         <token name="Material">256</token>
         <string name="MaterialVariantSerialized"></string>
@@ -1799,9 +1799,9 @@
         <token name="TopSurfaceInput">0</token>
         <float name="Transparency">0</float>
         <Vector3 name="Velocity">
-          <X>-0.000000000000000000000000000000000000000000001</X>
+          <X>0</X>
           <Y>0</Y>
-          <Z>-0.000000000000000000000000000000000000000000001</Z>
+          <Z>0</Z>
         </Vector3>
         <int name="VertexCount">0</int>
       </Properties>
@@ -1897,9 +1897,9 @@
         <token name="BottomSurface">0</token>
         <token name="BottomSurfaceInput">0</token>
         <CoordinateFrame name="CFrame">
-          <X>-12.03726</X>
+          <X>-302.8473</X>
           <Y>0.04843557</Y>
-          <Z>51.882256</Z>
+          <Z>424.8823</Z>
           <R00>1</R00>
           <R01>0</R01>
           <R02>0</R02>
@@ -1941,7 +1941,7 @@
         <float name="LeftParamB">0.5</float>
         <token name="LeftSurface">0</token>
         <token name="LeftSurfaceInput">0</token>
-        <bool name="Locked">false</bool>
+        <bool name="Locked">true</bool>
         <bool name="Massless">false</bool>
         <token name="Material">256</token>
         <string name="MaterialVariantSerialized"></string>
@@ -1994,9 +1994,9 @@
         <token name="TopSurfaceInput">0</token>
         <float name="Transparency">0</float>
         <Vector3 name="Velocity">
-          <X>-0.000000000000000000000000000000000000000000001</X>
+          <X>0</X>
           <Y>0</Y>
-          <Z>-0.000000000000000000000000000000000000000000001</Z>
+          <Z>0</Z>
         </Vector3>
         <int name="VertexCount">0</int>
       </Properties>
@@ -2115,9 +2115,9 @@
         <token name="BottomSurface">0</token>
         <token name="BottomSurfaceInput">0</token>
         <CoordinateFrame name="CFrame">
-          <X>-12.03726</X>
+          <X>-302.8473</X>
           <Y>0.1937424</Y>
-          <Z>51.99403</Z>
+          <Z>424.99408</Z>
           <R00>1</R00>
           <R01>0</R01>
           <R02>0</R02>
@@ -2159,7 +2159,7 @@
         <float name="LeftParamB">0.5</float>
         <token name="LeftSurface">0</token>
         <token name="LeftSurfaceInput">0</token>
-        <bool name="Locked">false</bool>
+        <bool name="Locked">true</bool>
         <bool name="Massless">false</bool>
         <token name="Material">256</token>
         <string name="MaterialVariantSerialized"></string>
@@ -2212,9 +2212,9 @@
         <token name="TopSurfaceInput">0</token>
         <float name="Transparency">0</float>
         <Vector3 name="Velocity">
-          <X>-0.000000000000000000000000000000000000000000001</X>
+          <X>0</X>
           <Y>0</Y>
-          <Z>-0.000000000000000000000000000000000000000000001</Z>
+          <Z>0</Z>
         </Vector3>
         <int name="VertexCount">0</int>
       </Properties>
@@ -2333,9 +2333,9 @@
         <token name="BottomSurface">0</token>
         <token name="BottomSurfaceInput">0</token>
         <CoordinateFrame name="CFrame">
-          <X>-12.037256</X>
+          <X>-302.8473</X>
           <Y>0.24217845</Y>
-          <Z>52.900642</Z>
+          <Z>425.90067</Z>
           <R00>1</R00>
           <R01>0</R01>
           <R02>0</R02>
@@ -2377,7 +2377,7 @@
         <float name="LeftParamB">0.5</float>
         <token name="LeftSurface">0</token>
         <token name="LeftSurfaceInput">0</token>
-        <bool name="Locked">false</bool>
+        <bool name="Locked">true</bool>
         <bool name="Massless">false</bool>
         <token name="Material">256</token>
         <string name="MaterialVariantSerialized"></string>
@@ -2430,9 +2430,9 @@
         <token name="TopSurfaceInput">0</token>
         <float name="Transparency">0</float>
         <Vector3 name="Velocity">
-          <X>-0.000000000000000000000000000000000000000000001</X>
+          <X>0</X>
           <Y>0</Y>
-          <Z>-0.000000000000000000000000000000000000000000001</Z>
+          <Z>0</Z>
         </Vector3>
         <int name="VertexCount">0</int>
       </Properties>
@@ -2551,9 +2551,9 @@
         <token name="BottomSurface">0</token>
         <token name="BottomSurfaceInput">0</token>
         <CoordinateFrame name="CFrame">
-          <X>-12.03726</X>
+          <X>-302.8473</X>
           <Y>0.2781942</Y>
-          <Z>51.99403</Z>
+          <Z>424.99408</Z>
           <R00>1</R00>
           <R01>0</R01>
           <R02>0</R02>
@@ -2595,7 +2595,7 @@
         <float name="LeftParamB">0.5</float>
         <token name="LeftSurface">0</token>
         <token name="LeftSurfaceInput">0</token>
-        <bool name="Locked">false</bool>
+        <bool name="Locked">true</bool>
         <bool name="Massless">false</bool>
         <token name="Material">256</token>
         <string name="MaterialVariantSerialized"></string>
@@ -2648,9 +2648,9 @@
         <token name="TopSurfaceInput">0</token>
         <float name="Transparency">0</float>
         <Vector3 name="Velocity">
-          <X>-0.000000000000000000000000000000000000000000001</X>
+          <X>0</X>
           <Y>0</Y>
-          <Z>-0.000000000000000000000000000000000000000000001</Z>
+          <Z>0</Z>
         </Vector3>
         <int name="VertexCount">0</int>
       </Properties>
@@ -2792,9 +2792,9 @@
         <token name="BottomSurface">0</token>
         <token name="BottomSurfaceInput">0</token>
         <CoordinateFrame name="CFrame">
-          <X>-12.037256</X>
+          <X>-302.8473</X>
           <Y>0.391211</Y>
-          <Z>52.900642</Z>
+          <Z>425.90067</Z>
           <R00>1</R00>
           <R01>0</R01>
           <R02>0</R02>
@@ -2836,7 +2836,7 @@
         <float name="LeftParamB">0.5</float>
         <token name="LeftSurface">0</token>
         <token name="LeftSurfaceInput">0</token>
-        <bool name="Locked">false</bool>
+        <bool name="Locked">true</bool>
         <bool name="Massless">false</bool>
         <token name="Material">256</token>
         <string name="MaterialVariantSerialized"></string>
@@ -2889,9 +2889,9 @@
         <token name="TopSurfaceInput">0</token>
         <float name="Transparency">0</float>
         <Vector3 name="Velocity">
-          <X>-0.000000000000000000000000000000000000000000001</X>
+          <X>0</X>
           <Y>0</Y>
-          <Z>-0.000000000000000000000000000000000000000000001</Z>
+          <Z>0</Z>
         </Vector3>
         <int name="VertexCount">0</int>
       </Properties>
@@ -3010,9 +3010,9 @@
         <token name="BottomSurface">0</token>
         <token name="BottomSurfaceInput">0</token>
         <CoordinateFrame name="CFrame">
-          <X>-12.322905</X>
+          <X>-303.13293</X>
           <Y>0.4272272</Y>
-          <Z>52.242416</Z>
+          <Z>425.24246</Z>
           <R00>1</R00>
           <R01>0</R01>
           <R02>0</R02>
@@ -3054,7 +3054,7 @@
         <float name="LeftParamB">0.5</float>
         <token name="LeftSurface">0</token>
         <token name="LeftSurfaceInput">0</token>
-        <bool name="Locked">false</bool>
+        <bool name="Locked">true</bool>
         <bool name="Massless">false</bool>
         <token name="Material">256</token>
         <string name="MaterialVariantSerialized"></string>
@@ -3107,9 +3107,9 @@
         <token name="TopSurfaceInput">0</token>
         <float name="Transparency">0</float>
         <Vector3 name="Velocity">
-          <X>-0.000000000000000000000000000000000000000000001</X>
+          <X>0</X>
           <Y>0</Y>
-          <Z>-0.000000000000000000000000000000000000000000001</Z>
+          <Z>0</Z>
         </Vector3>
         <int name="VertexCount">0</int>
       </Properties>
@@ -3389,9 +3389,9 @@
         <token name="BottomSurface">0</token>
         <token name="BottomSurfaceInput">0</token>
         <CoordinateFrame name="CFrame">
-          <X>-12.322905</X>
+          <X>-303.13293</X>
           <Y>0.68430823</Y>
-          <Z>51.683575</Z>
+          <Z>424.68362</Z>
           <R00>1</R00>
           <R01>0</R01>
           <R02>0</R02>
@@ -3421,7 +3421,7 @@
         <float name="LeftParamB">0.5</float>
         <token name="LeftSurface">0</token>
         <token name="LeftSurfaceInput">0</token>
-        <bool name="Locked">false</bool>
+        <bool name="Locked">true</bool>
         <bool name="Massless">false</bool>
         <token name="Material">256</token>
         <string name="MaterialVariantSerialized"></string>
@@ -3464,9 +3464,9 @@
         <token name="TopSurfaceInput">0</token>
         <float name="Transparency">0</float>
         <Vector3 name="Velocity">
-          <X>-0.000000000000000000000000000000000000000000001</X>
+          <X>0</X>
           <Y>0</Y>
-          <Z>-0.000000000000000000000000000000000000000000001</Z>
+          <Z>0</Z>
         </Vector3>
       </Properties>
       <Item class="Attachment" referent="85">
@@ -3653,9 +3653,9 @@
         <token name="BottomSurface">4</token>
         <token name="BottomSurfaceInput">0</token>
         <CoordinateFrame name="CFrame">
-          <X>-12.322905</X>
+          <X>-303.13293</X>
           <Y>3.4495826</Y>
-          <Z>52.316933</Z>
+          <Z>425.31696</Z>
           <R00>1</R00>
           <R01>0</R01>
           <R02>0</R02>
@@ -3685,7 +3685,7 @@
         <float name="LeftParamB">0.5</float>
         <token name="LeftSurface">0</token>
         <token name="LeftSurfaceInput">0</token>
-        <bool name="Locked">false</bool>
+        <bool name="Locked">true</bool>
         <bool name="Massless">false</bool>
         <token name="Material">256</token>
         <string name="MaterialVariantSerialized"></string>
@@ -3728,9 +3728,9 @@
         <token name="TopSurfaceInput">0</token>
         <float name="Transparency">1</float>
         <Vector3 name="Velocity">
-          <X>-0.000000000000000000000000000000000000000000001</X>
+          <X>0</X>
           <Y>0</Y>
-          <Z>-0.000000000000000000000000000000000000000000001</Z>
+          <Z>0</Z>
         </Vector3>
       </Properties>
       <Item class="Attachment" referent="92">

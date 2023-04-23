@@ -32,9 +32,9 @@
       <BinaryString name="Tags"></BinaryString>
       <OptionalCoordinateFrame name="WorldPivotData">
         <CFrame>
-          <X>-14.094999</X>
+          <X>-304.90503</X>
           <Y>1.0925</Y>
-          <Z>49.0685</Z>
+          <Z>422.0685</Z>
           <R00>1</R00>
           <R01>0</R01>
           <R02>0</R02>
@@ -61,9 +61,9 @@
         <token name="BottomSurface">0</token>
         <token name="BottomSurfaceInput">0</token>
         <CoordinateFrame name="CFrame">
-          <X>-14.094999</X>
+          <X>-304.90503</X>
           <Y>1.0925</Y>
-          <Z>49.0685</Z>
+          <Z>422.0685</Z>
           <R00>1</R00>
           <R01>0</R01>
           <R02>0</R02>
@@ -105,7 +105,7 @@
         <float name="LeftParamB">0.5</float>
         <token name="LeftSurface">0</token>
         <token name="LeftSurfaceInput">0</token>
-        <bool name="Locked">false</bool>
+        <bool name="Locked">true</bool>
         <bool name="Massless">false</bool>
         <token name="Material">816</token>
         <string name="MaterialVariantSerialized"></string>
