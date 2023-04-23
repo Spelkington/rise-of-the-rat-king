@@ -315,5 +315,6 @@ flamework.build
 
 *.rbxl*
 **/.env
+**/tmp
 
 builds

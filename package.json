@@ -24,10 +24,14 @@
   ],
   "scripts": {
     "build": "yarn workspaces foreach -pt run build",
-    "load-assets": "bash ./utils/sh/pull-assets.sh"
+    "create:place": "bash ./utils/create-template.sh -t places -n"
   },
   "main": "index.js",
   "license": "MIT",
   "private": true,
-  "packageManager": "yarn@3.5.0"
+  "packageManager": "yarn@3.5.0",
+  "devDependencies": {
+    "swig": "^1.4.2",
+    "yargs": "^17.7.1"
+  }
 }
