@@ -1,5 +1,5 @@
 {
-	"name": "roblox-ts-game",
+	"name": "lobby",
 	"globIgnorePaths": [
 		"**/package.json",
 		"**/tsconfig.json"
