@@ -246,8 +246,6 @@ Sessionx.vim
 
 # Temporary
 .netrwhist
-# Auto-generated tag files
-tags
 # Persistent undo
 [._]*.un~
 
@@ -306,6 +304,9 @@ $RECYCLE.BIN/
 !**/.yarn/releases
 !**/.yarn/sdks
 !**/.yarn/versions
+
+*/**/.pnp.*
+*/**/.yarn
 
 # End of https://www.toptal.com/developers/gitignore/api/macos,windows,linux,vim,visualstudiocode,lua,node
 

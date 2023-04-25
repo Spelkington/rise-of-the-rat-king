@@ -1,0 +1,24 @@
+{
+  "name": "roblox-ts-game",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "yarn buildsrc:roblox-ts-game && yarn buildplace:roblox-ts-game",
+    "buildsrc:roblox-ts-game": "rbxtsc",
+    "buildplace:roblox-ts-game": "mkdir -p builds && rojo build --output builds/roblox-ts-game.rbxlx roblox-ts-game.project.json",
+    "watch:roblox-ts-game": "rbxtsc -w",
+    "serve:roblox-ts-game": "rojo serve",
+    "dev:roblox-ts-game": "yarn build && yarn shortcircuitdev:roblox-ts-game",
+    "shortcircuitdev:roblox-ts-game": "concurrently 'yarn watch:roblox-ts-game' 'yarn serve:roblox-ts-game'"
+  },
+  "devDependencies": {
+    "@rbxts/compiler-types": "compiler-2.1.0",
+    "@rbxts/types": "^1.0.677"
+  },
+  "dependencies": {
+    "@rbxts/knit": "^0.0.21-alpha.0",
+    "@rbxts/services": "^1.5.1",
+    "assets": "1.0.0"
+  }
+}
