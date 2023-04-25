@@ -1,7 +1,11 @@
-import { Flamework } from "@flamework/core";
+import { Workspace, ServerStorage } from "@rbxts/services"
 
-Flamework.addPaths("src/server/components");
-Flamework.addPaths("src/server/services");
-Flamework.addPaths("src/shared/components");
+const lobbyModel = ServerStorage
+    .FindFirstChild("Assets")!
+    .FindFirstChild("Maps")!
+    .FindFirstChild("Lobbies")!
+    .FindFirstChild("Lobby")
+;
 
-Flamework.ignite();
+const newLobbyModel = lobbyModel?.Clone();
+newLobbyModel!.Parent = Workspace;
