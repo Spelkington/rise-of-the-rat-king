@@ -54,3 +54,9 @@ local TagImportLocation = GetInstanceFromDatamodel(Datamodel,"ServerStorage.TagL
 local TagExportLocation = "../../assets/tags"
 
 SaveAssetToFilesystem(TagExportLocation, TagImportLocation)
+
+-- Pull component tags
+local BaseModelsImportLocation = GetInstanceFromDatamodel(Datamodel,"ServerStorage.BaseModels")
+local BaseModelsExportLocation = "../../assets/basemodels"
+
+SaveAssetToFilesystem(BaseModelsExportLocation, BaseModelsImportLocation)
