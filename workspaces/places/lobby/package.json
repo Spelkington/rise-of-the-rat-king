@@ -8,32 +8,18 @@
     "buildsrc:lobby": "rbxtsc",
     "buildplace:lobby": "mkdir -p builds && rojo build --output builds/lobby.rbxlx lobby.project.json",
     "watch:lobby": "rbxtsc -w",
-    "serve:lobby": "rojo serve",
+    "serve:lobby": "rojo serve lobby.project.json",
     "dev:lobby": "yarn build && yarn shortcircuitdev:lobby",
-    "shortcircuitdev:lobby": "concurrently 'yarn watch:lobby' 'yarn serve:lobby'"
+    "shortcircuitdev:lobby": "concurrently -k 'yarn watch:lobby' 'yarn serve:lobby'"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
-    "@rbxts/compiler-types": "^2.0.2-types.0",
-    "@rbxts/types": "^1.0.642",
-    "@typescript-eslint/eslint-plugin": "^4.28.4",
-    "@typescript-eslint/parser": "^4.28.4",
-    "concurrently": "^8.0.1",
-    "eslint": "^7.31.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-prettier": "^3.4.0",
-    "eslint-plugin-roblox-ts": "^0.0.30",
-    "prettier": "^2.3.2",
-    "rbxts-transformer-flamework": "^1.0.0-beta.21",
-    "roblox-ts": "^2.1.0",
-    "typescript": "^4.9.4"
+    "@rbxts/compiler-types": "compiler-2.1.0",
+    "@rbxts/types": "^1.0.677"
   },
   "dependencies": {
-    "@flamework/components": "^1.0.0-beta.21",
-    "@flamework/core": "^1.0.0-beta.21",
-    "@flamework/networking": "^1.0.0-beta.21",
-    "assets": "1.0.0"
+    "@rbxts/knit": "^0.0.21-alpha.0",
+    "@rbxts/services": "^1.5.1",
+    "assets": "1.0.0",
+    "concurrently": "^8.0.1"
   }
 }

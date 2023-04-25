@@ -42,7 +42,27 @@ end
 
 -- TODO: Pass in filesystem paths as arguments
 local Datamodel = remodel.readPlaceFile("./out/assets.rbxlx")
-local Pullfrom = GetInstanceFromDatamodel(Datamodel,"Workspace.Assets")
-local Saveto = "../../assets"
 
-SaveAssetToFilesystem(Saveto,Pullfrom)
+-- Pull physical assets
+local AssetImportLocation = GetInstanceFromDatamodel(Datamodel,"Workspace.Assets")
+local AssetExportLocation = "../../assets/Assets"
+
+SaveAssetToFilesystem(AssetExportLocation, AssetImportLocation)
+
+-- Pull archived assets
+local ArchiveImportLocation = GetInstanceFromDatamodel(Datamodel,"ServerStorage.Assets")
+local ArchiveExportLocation = "../../assets/Assets"
+
+SaveAssetToFilesystem(ArchiveExportLocation, ArchiveImportLocation)
+
+-- Pull component tags
+local TagImportLocation = GetInstanceFromDatamodel(Datamodel,"ServerStorage.TagList")
+local TagExportLocation = "../../assets/TagList"
+
+SaveAssetToFilesystem(TagExportLocation, TagImportLocation)
+
+-- Pull component tags
+local BaseModelsImportLocation = GetInstanceFromDatamodel(Datamodel,"ServerStorage.BaseModels")
+local BaseModelsExportLocation = "../../assets/BaseModels"
+
+SaveAssetToFilesystem(BaseModelsExportLocation, BaseModelsImportLocation)
