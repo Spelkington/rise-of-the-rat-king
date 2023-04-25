@@ -6,13 +6,14 @@
 	],
 	"tree": {
 		"$className": "DataModel",
+		"ServerStorage": {
+			"$className": "ServerStorage",
+			"$path": "../../assets"
+		},
 		"Workspace": {
 			"$className": "Workspace",
-			"$properties": {
-				"FilteringEnabled": true
-			},
 			"Assets": {
-                "$path": "../../assets"
+				"$className": "Folder"
 			}
 		}
     }

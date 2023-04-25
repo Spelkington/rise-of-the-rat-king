@@ -56,12 +56,7 @@
 		},
 		"ServerStorage": {
 			"$className": "ServerStorage",
-			"Assets": {
-				"$path": "../../../assets/models"
-			},
-			"TagList": {
-				"$path": "../../../assets/tags"
-			}
+			"$path": "../../../assets"
 		}
 	}
 }
