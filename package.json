@@ -1,6 +1,6 @@
 {
   "name": "the-rat-king",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "template",
   "deployments": {
     "dev": {
