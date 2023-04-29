@@ -1518,6 +1518,7 @@ __metadata:
     "@rbxts/types": ^1.0.677
     assets: 1.0.0
     concurrently: ^8.0.1
+    roblox-ts: ^2.1.0
   languageName: unknown
   linkType: soft
 
