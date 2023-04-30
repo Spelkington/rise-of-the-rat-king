@@ -8,9 +8,7 @@
 		"$className": "DataModel",
 		"ServerScriptService": {
 			"$className": "ServerScriptService",
-			"TS": {
-				"$path": "out/Server"
-			}
+			"$path": "out/Server"
 		},
 		"ReplicatedStorage": {
 			"$className": "ReplicatedStorage",
@@ -23,17 +21,13 @@
 					}
 				}
 			},
-			"TS": {
-				"$path": "out/Shared"
-			}
+			"$path": "out/Shared"
 		},
 		"StarterPlayer": {
 			"$className": "StarterPlayer",
 			"StarterPlayerScripts": {
 				"$className": "StarterPlayerScripts",
-				"TS": {
-					"$path": "out/Client"
-				}
+				"$path": "out/Client"
 			}
 		},
 		"Workspace": {
