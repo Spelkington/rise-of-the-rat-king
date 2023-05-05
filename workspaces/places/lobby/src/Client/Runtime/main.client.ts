@@ -3,7 +3,7 @@ import { KnitClient as Knit } from "@rbxts/knit";
 const PointsService = Knit.GetService("PointsService");
 
 function PointsChanged(points: number) {
-	print("My points:", points);
+  print("My points:", points);
 }
 
 // Get points and listen for changes:
@@ -18,11 +18,11 @@ PointsService.GiveMePoints.Fire();
 let mostPoints = PointsService.MostPoints.Get();
 
 // Keep MostPoints value updated:
-PointsService.MostPoints.Changed.Connect(newMostPoints => {
-	mostPoints = newMostPoints;
+PointsService.MostPoints.Changed.Connect((newMostPoints) => {
+  mostPoints = newMostPoints;
 });
 
 // Advanced example, using promises to get points:
-PointsService.GetPointsPromise().then(points => {
-	print("Got points:", points);
+PointsService.GetPointsPromise().then((points) => {
+  print("Got points:", points);
 });

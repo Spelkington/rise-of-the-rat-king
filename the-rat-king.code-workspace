@@ -7,5 +7,8 @@
 	"settings": {
 		"typescript.tsdk": "node_modules/typescript/lib",
 		"explorer.sortOrder": "type"
-	}
+	},
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": true,
+	},
 }
