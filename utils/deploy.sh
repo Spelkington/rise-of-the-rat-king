@@ -1,5 +1,4 @@
-# Assumes that all projects have been built
-
+#!/usr/bin/bash 
 while getopts 'k:e:f' flag; do
     case "${flag}" in
         k) api_key=$OPTARG ;;
