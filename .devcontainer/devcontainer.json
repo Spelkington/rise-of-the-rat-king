@@ -32,7 +32,8 @@
 	},
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	"forwardPorts": [
-		34872
+		34872, // Rojo
+		33333 // IO-Serve
 	],
 	// Use 'postCreateCommand' to run commands after the container is created.
 	"postCreateCommand": "bash ./utils/dev-container-setup/setup.sh"

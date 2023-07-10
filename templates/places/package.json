@@ -10,7 +10,8 @@
     "watch:{{ template_name }}": "rbxtsc -w",
     "serve:{{ template_name }}": "rojo serve {{ template_name }}.project.json",
     "dev:{{ template_name }}": "yarn build && yarn shortcircuitdev:{{ template_name }}",
-    "shortcircuitdev:{{ template_name }}": "concurrently -k 'yarn watch:{{ template_name }}' 'yarn serve:{{ template_name }}'"
+    "connectio:{{ template_name }}": "npx io-serve",
+    "shortcircuitdev:{{ template_name }}": "concurrently -k 'yarn watch:{{ template_name }}' 'yarn serve:{{ template_name }}' 'yarn connectio:{{ template_name }}'"
   },
   "devDependencies": {
     "@rbxts/compiler-types": "compiler-2.1.0",

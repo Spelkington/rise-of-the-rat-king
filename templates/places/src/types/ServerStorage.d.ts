@@ -1,4 +1,4 @@
 interface ServerStorage extends Instance {
-	TagList: Folder;
-	Assets: Folder;
+  TagList: Folder;
+  Assets: Folder;
 }

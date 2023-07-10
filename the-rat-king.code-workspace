@@ -13,5 +13,8 @@
 			"github.codespaces",
 			"ms-vscode-remote.remote-containers"
 		]
+	},
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": true,
 	}
 }

@@ -17,14 +17,12 @@ on:
       - "**.rbx*"
 
 jobs:
-
   test-build:
     name: Test build
     runs-on: ubuntu-latest
     env:
       TERM: dumb
     steps:
-
       - name: Checkout code
         uses: actions/checkout@v3
 
@@ -54,7 +52,6 @@ jobs:
     needs:
       - test-build
     steps:
-
       - name: Checkout code
         uses: actions/checkout@v3
 

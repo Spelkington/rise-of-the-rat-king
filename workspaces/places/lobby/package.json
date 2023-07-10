@@ -15,6 +15,7 @@
   "devDependencies": {
     "@rbxts/compiler-types": "compiler-2.1.0",
     "@rbxts/types": "^1.0.677",
+    "cgc-eslint-config": "workspace:^",
     "roblox-ts": "^2.1.0"
   },
   "dependencies": {

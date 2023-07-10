@@ -1,5 +1,5 @@
 interface ServerScriptService extends Instance {
-  Runtime: Folder;
   Components: Folder;
+  Runtime: Folder;
   Services: Folder;
 }
