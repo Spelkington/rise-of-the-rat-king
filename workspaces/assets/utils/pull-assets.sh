@@ -1,3 +1,5 @@
+#!/usr/bin/bash
+
 rm -rf ../../assets
 mkdir ../../assets
 mkdir ../../assets/Assets

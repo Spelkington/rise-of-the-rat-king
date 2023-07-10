@@ -1,3 +1,4 @@
+#!/usr/bin/bash
 
 # Check if out/assets.rbxlx already exists. If so, this existing build is considered the source of truth
 # If out/assets.rbxlx doesn't already exist, generate a new one from the current assets

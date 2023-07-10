@@ -1,3 +1,5 @@
+#!/usr/bin/bash
+
 TEMPORARY_DIRECTORY="./temp"
 OUTPUT_LOCATION="./workspaces"
 template_name=""

@@ -13,7 +13,12 @@ unzip tmp/aftman.zip -d tmp
 
 # Add to path in zsh
 echo "[INFO] Adding aftman to PATH..."
-echo '. "\$HOME/.aftman/env"' >> ~/.zshrc
+echo '. "$HOME/.aftman/env"' >> ~/.zshrc
 
 echo "[INFO] Installing packages via aftman..."
 ./tmp/aftman install --no-trust-check
+
+echo "[INFO] Enabling execution on all aftman packages..."
+chmod +x ~/.aftman/bin/*
+
+rm -rf "tmp"
