@@ -319,4 +319,7 @@ flamework.build
 **/temp
 *.tmp.json
 
+# Ignore tsconfig files
+**/tsconfig.json
+
 builds
