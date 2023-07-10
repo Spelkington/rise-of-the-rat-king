@@ -7,5 +7,14 @@
 	"settings": {
 		"typescript.tsdk": "node_modules/typescript/lib",
 		"explorer.sortOrder": "type"
+	},
+	"extensions": {
+		"recommendations": [
+			"github.codespaces",
+			"ms-vscode-remote.remote-containers"
+		]
+	},
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": true,
 	}
 }

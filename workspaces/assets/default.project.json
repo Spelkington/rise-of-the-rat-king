@@ -1,0 +1,17 @@
+{
+  "name": "the-rat-king-arena",
+  "globIgnorePaths": ["**/package.json", "**/tsconfig.json"],
+  "tree": {
+    "$className": "DataModel",
+    "ServerStorage": {
+      "$className": "ServerStorage",
+      "$path": "../../assets"
+    },
+    "Workspace": {
+      "$className": "Workspace",
+      "Assets": {
+        "$className": "Folder"
+      }
+    }
+  }
+}

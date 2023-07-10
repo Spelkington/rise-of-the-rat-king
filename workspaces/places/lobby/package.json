@@ -1,0 +1,27 @@
+{
+  "name": "lobby",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "yarn buildsrc:lobby && yarn buildplace:lobby",
+    "buildsrc:lobby": "rbxtsc",
+    "buildplace:lobby": "mkdir -p builds && rojo build --output builds/lobby.rbxlx lobby.project.json",
+    "watch:lobby": "rbxtsc -w",
+    "serve:lobby": "rojo serve lobby.project.json",
+    "dev:lobby": "yarn build && yarn shortcircuitdev:lobby",
+    "shortcircuitdev:lobby": "concurrently -k 'yarn watch:lobby' 'yarn serve:lobby'"
+  },
+  "devDependencies": {
+    "@rbxts/compiler-types": "compiler-2.1.0",
+    "@rbxts/types": "^1.0.677",
+    "cgc-eslint-config": "workspace:^",
+    "roblox-ts": "^2.1.0"
+  },
+  "dependencies": {
+    "@rbxts/knit": "^0.0.21-alpha.0",
+    "@rbxts/services": "^1.5.1",
+    "assets": "1.0.0",
+    "concurrently": "^8.0.1"
+  }
+}

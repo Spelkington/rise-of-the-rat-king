@@ -1,0 +1,28 @@
+{
+  "name": "arena",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "yarn buildsrc:arena && yarn buildplace:arena",
+    "buildsrc:arena": "rbxtsc",
+    "buildplace:arena": "mkdir -p builds && rojo build --output builds/arena.rbxlx arena.project.json",
+    "watch:arena": "rbxtsc -w",
+    "serve:arena": "rojo serve arena.project.json",
+    "dev:arena": "yarn build && yarn shortcircuitdev:arena",
+    "connectio:arena": "npx io-serve",
+    "shortcircuitdev:arena": "concurrently -k 'yarn watch:arena' 'yarn serve:arena' 'yarn connectio:arena'"
+  },
+  "devDependencies": {
+    "@rbxts/compiler-types": "compiler-2.1.0",
+    "@rbxts/types": "^1.0.677",
+    "cgc-eslint-config": "workspace:^",
+    "roblox-ts": "^2.1.0"
+  },
+  "dependencies": {
+    "@rbxts/knit": "^0.0.21-alpha.0",
+    "@rbxts/services": "^1.5.1",
+    "assets": "1.0.0",
+    "concurrently": "^8.0.1"
+  }
+}

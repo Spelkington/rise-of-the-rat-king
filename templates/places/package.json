@@ -1,0 +1,27 @@
+{
+  "name": "{{ template_name }}",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "yarn buildsrc:{{ template_name }} && yarn buildplace:{{ template_name }}",
+    "buildsrc:{{ template_name }}": "rbxtsc",
+    "buildplace:{{ template_name }}": "mkdir -p builds && rojo build --output builds/{{ template_name }}.rbxlx {{ template_name }}.project.json",
+    "watch:{{ template_name }}": "rbxtsc -w",
+    "serve:{{ template_name }}": "rojo serve {{ template_name }}.project.json",
+    "dev:{{ template_name }}": "yarn build && yarn shortcircuitdev:{{ template_name }}",
+    "connectio:{{ template_name }}": "npx io-serve",
+    "shortcircuitdev:{{ template_name }}": "concurrently -k 'yarn watch:{{ template_name }}' 'yarn serve:{{ template_name }}' 'yarn connectio:{{ template_name }}'"
+  },
+  "devDependencies": {
+    "@rbxts/compiler-types": "compiler-2.1.0",
+    "@rbxts/types": "^1.0.677",
+    "roblox-ts": "^2.1.0"
+  },
+  "dependencies": {
+    "@rbxts/knit": "^0.0.21-alpha.0",
+    "@rbxts/services": "^1.5.1",
+    "assets": "1.0.0",
+    "concurrently": "^8.0.1"
+  }
+}

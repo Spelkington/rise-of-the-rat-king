@@ -18,34 +18,29 @@
       }
     }
   },
-  "main": "index.js",
+  "workspaces": [
+    "workspaces/*",
+    "workspaces/**",
+    "cgc-eslint-config"
+  ],
   "scripts": {
-    "init-tools": "sh ./utils/sh/init-tools.sh",
-    "build": "yarn pull-assets && sh ./utils/sh/build.sh",
-    "dev": "clear && yarn build && rbxtsc -w",
-    "pull-assets": "sh ./utils/sh/pull_assets.sh",
-    "deploy": "yarn build && sh ./utils/sh/deploy.sh"
+    "build": "yarn prebuild & yarn workspaces foreach -pt run build",
+    "deploy": "bash ./utils/deploy/deploy.sh",
+    "deploy:full": "yarn build && yarn deploy",
+    "create:place": "bash ./utils/templates/create-template.sh -t places -n",
+    "prebuild": "bash ./utils/yarn/pre-build.sh"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "packageManager": "yarn@3.5.0",
   "devDependencies": {
-    "@rbxts/compiler-types": "^2.0.2-types.0",
-    "@rbxts/types": "^1.0.642",
-    "@typescript-eslint/eslint-plugin": "^4.28.4",
-    "@typescript-eslint/parser": "^4.28.4",
-    "eslint": "^7.31.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-prettier": "^3.4.0",
-    "eslint-plugin-roblox-ts": "^0.0.30",
-    "prettier": "^2.3.2",
-    "rbxts-transformer-flamework": "1.0.0-beta.20",
+    "concurrently": "^8.0.1",
+    "husky": "^8.0.0",
+    "prettier": "^2.8.8",
     "roblox-ts": "^2.1.0",
-    "typescript": "^4.9.5"
-  },
-  "dependencies": {
-    "@flamework/components": "1.0.0-beta.20",
-    "@flamework/core": "1.0.0-beta.20",
-    "@flamework/networking": "1.0.0-beta.20"
+    "swig": "^1.4.2",
+    "typescript": "^5.0.4",
+    "yargs": "^17.7.1"
   }
 }

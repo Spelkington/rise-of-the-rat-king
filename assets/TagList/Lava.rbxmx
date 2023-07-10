@@ -1,0 +1,10 @@
+<roblox version="4">
+  <Item class="Configuration" referent="0">
+    <Properties>
+      <string name="Name">Lava</string>
+      <BinaryString name="AttributesSerialize">BgAAAAsAAABBbHdheXNPblRvcAMABQAAAENvbG9yD8vKyj4AAAAAAAAAAAgAAABEcmF3VHlwZQIDAAAAQm94BQAAAEdyb3VwAgAAAAAEAAAASWNvbgIGAAAAY2FuY2VsBwAAAFZpc2libGUDAQ==</BinaryString>
+      <int64 name="SourceAssetId">-1</int64>
+      <BinaryString name="Tags"></BinaryString>
+    </Properties>
+  </Item>
+</roblox>

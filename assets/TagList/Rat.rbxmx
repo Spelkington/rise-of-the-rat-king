@@ -1,0 +1,10 @@
+<roblox version="4">
+  <Item class="Configuration" referent="0">
+    <Properties>
+      <string name="Name">Rat</string>
+      <BinaryString name="AttributesSerialize">BgAAAAsAAABBbHdheXNPblRvcAMABQAAAENvbG9yD9n0Hj/Z9B4/2fQePwgAAABEcmF3VHlwZQIDAAAAQm94BQAAAEdyb3VwAgAAAAAEAAAASWNvbgIFAAAAaGVhcnQHAAAAVmlzaWJsZQMB</BinaryString>
+      <int64 name="SourceAssetId">-1</int64>
+      <BinaryString name="Tags"></BinaryString>
+    </Properties>
+  </Item>
+</roblox>
