@@ -10,7 +10,8 @@
     "watch:arena": "rbxtsc -w",
     "serve:arena": "rojo serve arena.project.json",
     "dev:arena": "yarn build && yarn shortcircuitdev:arena",
-    "shortcircuitdev:arena": "concurrently -k 'yarn watch:arena' 'yarn serve:arena'"
+    "connectio:arena": "npx io-serve",
+    "shortcircuitdev:arena": "concurrently -k 'yarn watch:arena' 'yarn serve:arena' 'yarn connectio:arena'"
   },
   "devDependencies": {
     "@rbxts/compiler-types": "compiler-2.1.0",
