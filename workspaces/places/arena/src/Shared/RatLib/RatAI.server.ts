@@ -1,4 +1,4 @@
-import RatAI from "./RatAI";
+import { RatAI } from "./RatAI";
 
 const Rat = script.Parent;
-RatAI.Initialize(Rat);
+// RatAI.Initialize(Rat);

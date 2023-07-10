@@ -27,7 +27,9 @@ const RatService = Knit.CreateService({
 
   GetPlayerRats(player: Player) {},
 
-  GetRatFromModel(player: Player, model: Model): Rat | undefined {},
+  GetRatFromModel(player: Player, model: Model): Rat | undefined {
+    return undefined;
+  },
 
   OnPlayerSpawned(player: Player) {
     this.Rats.set(player, new Array<Rat>());

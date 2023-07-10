@@ -14,6 +14,6 @@ done
 
 mkdir -p $TEMPORARY_DIRECTORY
 rm -rf $TEMPORARY_DIRECTORY/*
-node ./utils/create-template.js --name $template_name --input ./templates/$template_type --output $TEMPORARY_DIRECTORY >> /dev/null
+node ./utils/templates/create-template.js --name $template_name --input ./templates/$template_type --output $TEMPORARY_DIRECTORY >> /dev/null
 mv $TEMPORARY_DIRECTORY/$template_name $OUTPUT_LOCATION/$template_type
 rm -rf $TEMPORARY_DIRECTORY

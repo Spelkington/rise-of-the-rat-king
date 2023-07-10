@@ -20,13 +20,15 @@
   },
   "workspaces": [
     "workspaces/*",
-    "workspaces/**"
+    "workspaces/**",
+    "cgc-eslint-config"
   ],
   "scripts": {
     "build": "yarn workspaces foreach -pt run build",
-    "deploy": "bash ./utils/deploy.sh",
+    "deploy": "bash ./utils/deploy/deploy.sh",
     "deploy:full": "yarn build && yarn deploy",
-    "create:place": "bash ./utils/create-template.sh -t places -n"
+    "create:place": "bash ./utils/templates/create-template.sh -t places -n",
+    "lint:all": "eslint "
   },
   "main": "index.js",
   "license": "MIT",
@@ -40,6 +42,7 @@
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-roblox-ts": "^0.0.35",
+    "husky": "^8.0.0",
     "prettier": "^2.8.8",
     "roblox-ts": "^2.1.0",
     "swig": "^1.4.2",
