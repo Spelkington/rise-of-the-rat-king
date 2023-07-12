@@ -1,6 +1,9 @@
 {
-  "name": "the-rat-king-arena",
-  "globIgnorePaths": ["**/package.json", "**/tsconfig.json"],
+  "name": "the-rat-king-game-assets",
+  "globIgnorePaths": [
+    "**/package.json",
+    "**/tsconfig.json"
+  ],
   "tree": {
     "$className": "DataModel",
     "ServerStorage": {
