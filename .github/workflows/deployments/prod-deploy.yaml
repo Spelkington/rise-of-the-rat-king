@@ -1,48 +1,10 @@
 name: "Deploy: Production"
 
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - ".github/workflows/*"
-      - "**.ts"
-      - "**.lua"
-      - "**.json"
-      - "**.sh"
-      - "**.toml"
-      - "**.rbx*"
   workflow_dispatch: {}
   repository_dispatch: {}
 
 jobs:
-  test-build:
-    name: Test build
-    runs-on: ubuntu-latest
-    env:
-      TERM: dumb
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-
-      - name: Install aftman
-        uses: ok-nick/setup-aftman@v0.3.0
-
-      - name: Set Node.js 18.x
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18.x
-
-      - name: Install yarn packages
-        uses: borales/actions-yarn@v4
-        with:
-          cmd: install
-
-      - name: Build places
-        uses: borales/actions-yarn@v4
-        with:
-          cmd: build
-
   prod-deploy:
     name: Deploy to ROBLOX
     runs-on: ubuntu-latest

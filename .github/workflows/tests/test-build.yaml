@@ -1,0 +1,42 @@
+name: "Deploy: Development"
+
+on:
+  pull_request:
+    types:
+      - ready_for_review
+    paths:
+      - ".github/workflows/*"
+      - "workspaces/**/*.ts"
+      - "workspaces/**/*.lua"
+      - "workspaces/**/*.json"
+      - "workspaces/**/*.sh"
+      - "workspaces/**/*.toml"
+      - assets/**/*
+
+jobs:
+  test-build:
+    name: Test build
+    runs-on: ubuntu-latest
+    env:
+      TERM: dumb
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Install aftman
+        uses: ok-nick/setup-aftman@v0.3.0
+
+      - name: Set Node.js 18.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+
+      - name: Install yarn packages
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: install
+
+      - name: Build places
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: build
