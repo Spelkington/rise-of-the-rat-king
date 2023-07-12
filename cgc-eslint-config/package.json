@@ -1,6 +1,9 @@
 {
   "name": "cgc-eslint-config",
   "packageManager": "yarn@3.5.0",
+  "scripts": {
+    "build": ""
+  },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "latest",
     "@typescript-eslint/parser": "latest",
@@ -9,5 +12,8 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-roblox-ts": "^0.0.35",
     "prettier": "^3.0.0"
+  },
+  "dependencies": {
+    "@rbxts/compiler-types": "^2.1.1-types.0"
   }
 }

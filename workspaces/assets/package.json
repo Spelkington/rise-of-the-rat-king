@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "bash ./utils/build.sh",
-    "build:assets": "bash ./utils/pull-assets.sh",
-    "compile:assets": "bash ./utils/compile-assets.sh"
+    "build": "bash ./utils/rebuild-assets.sh",
+    "unpack:assets": "bash ./utils/unpack-assets.sh",
+    "pack:assets": "bash ./utils/pack-assets.sh"
   },
   "keywords": [],
   "author": "",

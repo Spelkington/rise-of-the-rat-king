@@ -23,17 +23,21 @@
     "workspaces/**",
     "cgc-eslint-config"
   ],
+  "installConfig": {
+    "hoistingLimits": "workspaces"
+  },
   "scripts": {
-    "build": "yarn prebuild & yarn workspaces foreach -pt run build",
-    "deploy": "bash ./utils/deploy/deploy.sh",
-    "deploy:full": "yarn build && yarn deploy",
+    "build": "yarn prebuild && yarn workspaces foreach -pt run build",
+    "deploy": "yarn build && bash ./utils/yarn/deploy.sh",
     "create:place": "bash ./utils/templates/create-template.sh -t places -n",
-    "prebuild": "bash ./utils/yarn/pre-build.sh"
+    "prebuild": "bash ./utils/yarn/pre-build.sh",
+    "install:full": "yarn && bash ./utils/yarn/post-install.sh",
+    "postpull": "yarn install && yarn run pack-assets"
   },
   "main": "index.js",
   "license": "MIT",
   "private": true,
-  "packageManager": "yarn@3.5.0",
+  "packageManager": "yarn@3.6.1",
   "devDependencies": {
     "concurrently": "^8.0.1",
     "husky": "^8.0.0",
