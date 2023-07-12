@@ -1,4 +1,10 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-yarn run postpull
+echo "[INFO] Running post-pull hook..."
+
+echo "[INFO] Executing fresh yarn install..."
+yarn
+
+echo "[INFO] Packing assets..."
+yarn run pack:assets
