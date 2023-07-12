@@ -1,7 +1,6 @@
 {
 	"version": "2.0.0",
 	"tasks": [
-		
 		{
 			"label": "Build Project",
 			"type": "shell",
@@ -14,6 +13,58 @@
 				"reveal": "always",
 				"panel": "new"
 			}
-		}
-	],
+		},
+		{
+			"label": "Update Yarn Install",
+			"type": "shell",
+			"command": "yarn",
+			"windows": {
+				"command": "yarn"
+			},
+			"group": "build",
+			"presentation": {
+				"reveal": "always",
+				"panel": "new"
+			}
+		},
+		{
+			"label": "Unpack Assets",
+			"type": "shell",
+			"command": "yarn unpack:assets",
+			"windows": {
+				"command": "yarn unpack:assets"
+			},
+			"group": "build",
+			"presentation": {
+				"reveal": "always",
+				"panel": "new"
+			}
+		},
+		{
+			"label": "Develop: Arena",
+			"type": "shell",
+			"command": "yarn dev:arena",
+			"windows": {
+				"command": "yarn dev:arena"
+			},
+			"group": "build",
+			"presentation": {
+				"reveal": "always",
+				"panel": "new"
+			}
+		},
+		{
+			"label": "Develop: Lobby",
+			"type": "shell",
+			"command": "yarn dev:lobby",
+			"windows": {
+				"command": "yarn dev:lobby"
+			},
+			"group": "build",
+			"presentation": {
+				"reveal": "always",
+				"panel": "new"
+			}
+		},
+	]
 }
