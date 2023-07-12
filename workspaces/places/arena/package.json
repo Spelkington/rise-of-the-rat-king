@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "yarn cleanup && yarn compile && mkdir -p builds && rojo build --output builds/lobby.rbxlx rojo.project.json",
+    "build": "yarn cleanup && yarn compile && mkdir -p builds && rojo build --output builds/arena.rbxlx rojo.project.json",
     "cleanup": "yarn lint && yarn format",
     "compile": "rbxtsc",
     "connect-io": "npx io-serve",
