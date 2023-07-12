@@ -26,17 +26,16 @@
     "hoistingLimits": "workspaces"
   },
   "scripts": {
+    "afterinstall": "bash ./utils/yarn/after-install.sh",
     "build": "yarn prebuild && yarn workspaces foreach -pt run build",
     "cleanup": "yarn workspaces foreach -pt run cleanup",
     "create:place": "bash ./utils/templates/create-template.sh -t places -n",
     "deploy": "yarn build && bash ./utils/yarn/deploy.sh",
-    "dev:lobby": "yarn run unpack:assets && yarn workspace lobby run dev",
     "dev:arena": "yarn run unpack:assets && yarn workspace arena run dev",
+    "dev:lobby": "yarn run unpack:assets && yarn workspace lobby run dev",
     "format": "yarn prebuild && yarn workspaces foreach -pt run format",
-    "install:full": "yarn && bash ./utils/yarn/post-install.sh",
     "lint": "yarn prebuild && yarn workspaces foreach -pt run lint",
     "pack:assets": "yarn workspace assets run pack",
-    "postpull": "yarn install && yarn run pack:assets",
     "prebuild": "bash ./utils/yarn/pre-build.sh",
     "unpack:assets": "yarn workspace assets run unpack"
   },
