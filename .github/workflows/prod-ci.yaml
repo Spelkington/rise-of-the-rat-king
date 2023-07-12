@@ -12,6 +12,8 @@ on:
       - "**.sh"
       - "**.toml"
       - "**.rbx*"
+  workflow_dispatch: {}
+  repository_dispatch: {}
 
 jobs:
   test-build:

@@ -5,8 +5,11 @@
   "main": "index.js",
   "scripts": {
     "build": "bash ./utils/rebuild-assets.sh",
-    "unpack:assets": "bash ./utils/unpack-assets.sh",
-    "pack:assets": "bash ./utils/pack-assets.sh"
+    "unpack": "bash ./utils/unpack-assets.sh",
+    "pack": "bash ./utils/pack-assets.sh",
+    "lint": "",
+    "format": "",
+    "cleanup": ""
   },
   "keywords": [],
   "author": "",

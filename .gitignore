@@ -320,6 +320,10 @@ flamework.build
 *.tmp.json
 
 # Ignore tsconfig files
-**/tsconfig.json
+workspaces/places/*/tsconfig.json
+workspaces/places/*/.prettierignore
+workspaces/places/*/.prettierrc
+workspaces/places/*/.eslintrc
 
 builds
+assets_backup
