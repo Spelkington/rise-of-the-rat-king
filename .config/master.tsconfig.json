@@ -1,6 +1,8 @@
 {
+  // This is the master TypeScript config file. If you are editing any
+  // other tsconfig.json file manually, those changes will be overwritten.
+  // To change the config, edit the top-level master.tsconfig.json instead.
   "compilerOptions": {
-    // required
     "allowSyntheticDefaultImports": true,
     "downlevelIteration": true,
     "jsx": "react",
@@ -18,11 +20,15 @@
     "typeRoots": [
       "node_modules/@rbxts"
     ],
-    // configurable
     "rootDir": "src",
     "outDir": "out",
     "baseUrl": "src",
     "incremental": true,
     "tsBuildInfoFile": "out/tsconfig.tsbuildinfo"
-  }
+  },
+  "references": [
+    {
+      "path": "./workspaces/places/*"
+    }
+  ]
 }

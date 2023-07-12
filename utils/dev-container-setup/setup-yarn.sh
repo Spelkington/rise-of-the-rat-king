@@ -1,4 +1,4 @@
 #!/usr/bin/bash
 
 # Initialize yarn libraries
-yarn
+yarn set version berry

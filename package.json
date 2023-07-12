@@ -20,21 +20,35 @@
   },
   "workspaces": [
     "workspaces/*",
-    "workspaces/**",
-    "cgc-eslint-config"
+    "workspaces/**"
   ],
+  "installConfig": {
+    "hoistingLimits": "workspaces"
+  },
   "scripts": {
-    "build": "yarn prebuild & yarn workspaces foreach -pt run build",
-    "deploy": "bash ./utils/deploy/deploy.sh",
-    "deploy:full": "yarn build && yarn deploy",
+    "build": "yarn prebuild && yarn workspaces foreach -pt run build",
+    "cleanup": "yarn workspaces foreach -pt run cleanup",
     "create:place": "bash ./utils/templates/create-template.sh -t places -n",
-    "prebuild": "bash ./utils/yarn/pre-build.sh"
+    "deploy": "yarn build && bash ./utils/yarn/deploy.sh",
+    "dev:lobby": "yarn run unpack:assets && yarn workspace lobby run dev",
+    "dev:arena": "yarn run unpack:assets && yarn workspace arena run dev",
+    "format": "yarn prebuild && yarn workspaces foreach -pt run format",
+    "install:full": "yarn && bash ./utils/yarn/post-install.sh",
+    "lint": "yarn prebuild && yarn workspaces foreach -pt run lint",
+    "pack:assets": "yarn workspace assets run pack",
+    "postpull": "yarn install && yarn run pack:assets",
+    "prebuild": "bash ./utils/yarn/pre-build.sh",
+    "unpack:assets": "yarn workspace assets run unpack"
   },
   "main": "index.js",
   "license": "MIT",
   "private": true,
-  "packageManager": "yarn@3.5.0",
+  "packageManager": "yarn@3.6.1",
   "devDependencies": {
+    "@rbxts/compiler-types": "^2.1.1-types.0",
+    "@rbxts/knit": "^0.0.21-alpha.0",
+    "@rbxts/services": "^1.5.1",
+    "@rbxts/types": "^1.0.704",
     "concurrently": "^8.0.1",
     "husky": "^8.0.0",
     "prettier": "^2.8.8",

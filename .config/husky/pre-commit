@@ -1,0 +1,12 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+echo "[INFO] Running pre-commit hook..."
+
+echo "[INFO] Cleaning up..."
+yarn run cleanup
+
+echo "[INFO] Checking build..."
+yarn run build
+
+echo "[SUCCESS] Commit validated! Thanks for contributing! ✨🎉"

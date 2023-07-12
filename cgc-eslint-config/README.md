@@ -1,1 +1,0 @@
-# cgc-eslint-config

@@ -9,9 +9,12 @@ while getopts 'k:e:f' flag; do
 done
 
 if [ -z ${api_key+x} ]; then
-    if [ -f .env ]; then
+    if [-z ${EXPERIENCE_API_KEY+x} ]; then
+        api_key=$EXPERIENCE_API_KEY
+    elif [ -f .env ]; then
         source .env
         api_key=$EXPERIENCE_API_KEY
+        echo "[INFO] Using API key from .env file!"
     else
         echo "[ERROR] An API key must be provided."
         exit 1
@@ -39,10 +42,14 @@ project_domains=( $(cat "$package_file" | jq -r ".deployments.$project_environme
 set -e
 for project_domain in "${project_domains[@]}"; do
 
-    echo "[DEPLOY] Deploying $project_domain to Roblox in $project_environment environment..."
+    echo "[INFO] Deploying "$project_domain" workspace to Roblox in $project_environment environment..."
 
     place_id=$(jq -r ".deployments.$project_environment.places.$project_domain" $package_file)
     universe_id=$(jq -r ".deployments.$project_environment.universe" $package_file)
+
+    echo "[INFO] Publishing to target:"
+    echo "  Universe ID: $universe_id"
+    echo "  Place ID: $place_id"
     
     rbxcloud experience publish \
         --filename ./workspaces/places/$project_domain/builds/$project_domain.rbxlx \

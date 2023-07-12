@@ -1,0 +1,35 @@
+name: "Deploy: Production"
+
+on:
+  workflow_dispatch: {}
+  repository_dispatch: {}
+
+jobs:
+  prod-deploy:
+    name: Deploy to ROBLOX
+    runs-on: ubuntu-latest
+    env:
+      TERM: dumb
+    needs:
+      - test-build
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Install aftman
+        uses: ok-nick/setup-aftman@v0.3.0
+
+      - name: Set Node.js 18.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+
+      - name: Install yarn packages
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: install
+
+      - name: Deploy places to beta experience
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: deploy -e prod -k ${{ secrets.EXPERIENCE_API_KEY }} -f

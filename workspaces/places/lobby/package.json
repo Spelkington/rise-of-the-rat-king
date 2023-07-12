@@ -4,18 +4,27 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "yarn buildsrc:lobby && yarn buildplace:lobby",
-    "buildsrc:lobby": "rbxtsc",
-    "buildplace:lobby": "mkdir -p builds && rojo build --output builds/lobby.rbxlx lobby.project.json",
-    "watch:lobby": "rbxtsc -w",
-    "serve:lobby": "rojo serve lobby.project.json",
-    "dev:lobby": "yarn build && yarn shortcircuitdev:lobby",
-    "shortcircuitdev:lobby": "concurrently -k 'yarn watch:lobby' 'yarn serve:lobby'"
+    "build": "yarn cleanup && yarn compile && mkdir -p builds && rojo build --output builds/lobby.rbxlx rojo.project.json",
+    "cleanup": "yarn lint && yarn format",
+    "compile": "rbxtsc",
+    "connect-io": "npx io-serve",
+    "dev": "yarn build && yarn shortcircuitdev",
+    "format": "prettier --write .",
+    "lint": "eslint . --fix",
+    "serve": "rojo serve rojo.project.json",
+    "shortcircuitdev": "concurrently -k 'yarn watch' 'yarn serve' 'yarn connect-io'",
+    "watch": "rbxtsc -w"
   },
   "devDependencies": {
-    "@rbxts/compiler-types": "compiler-2.1.0",
+    "@rbxts/compiler-types": "^2.1.1-types.0",
     "@rbxts/types": "^1.0.677",
-    "cgc-eslint-config": "workspace:^",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.44.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-roblox-ts": "^0.0.35",
+    "prettier": "^3.0.0",
     "roblox-ts": "^2.1.0"
   },
   "dependencies": {
